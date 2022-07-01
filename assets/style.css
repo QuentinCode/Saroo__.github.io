@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&family=Roboto+Slab&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    list-style-type: none;
+    text-decoration: none;
+    background: #af6df5;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-image: url(./img/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: black;
+}
+nav img {
+    height: 150px;
+}
+
+
