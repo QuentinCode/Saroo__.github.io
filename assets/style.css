@@ -23,6 +23,7 @@ header {
     background-size: cover;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 nav {
     position: fixed;
@@ -37,24 +38,27 @@ nav img {
     height: 150px;
 }
 
-nav ul {
+ul {
     position: relative;
     transform: skewY(-15deg);
-    margin-top: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
 }
-nav ul li {
+ul li {
     position: relative;
     width: 200px;
     background: #af6df5;
     padding: 15px;
     z-index: var(--i);
     transition: all 0.2s;
+    cursor: pointer;
 }
-nav ul li:hover {
+ul li:hover {
     background: #E84074;
     transform: translateX(50px);
 }
-nav ul li::before {
+ul li::before {
     content: "";
     position: absolute;
     top: 0;
@@ -66,10 +70,10 @@ nav ul li::before {
     transform: skewY(45deg);
     transition: all .2s;
 }
-nav ul li:hover::before {
+ul li:hover::before {
     background: #8c2948;
 }
-nav ul li::after {
+ul li::after {
     content: '';
     position: absolute;
     top: -40px;
@@ -81,10 +85,10 @@ nav ul li::after {
     transform: skewX(45deg);
     transition: all .2s;
 }
-nav ul li:hover::after {
+ul li:hover::after {
     background: #c03662;
 }
-nav ul li a {
+ul li a {
     display: block;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
@@ -93,6 +97,6 @@ nav ul li a {
 ul li:hover a {
     color: #e2d2f2;
 }
-nav ul li:last-child::after {
+ul li:last-child::after {
     box-shadow: -100px 100px 20px rgba(0,0,0,0.25);
 }
